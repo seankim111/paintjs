@@ -55,10 +55,10 @@ function handleRangeChange(event) {
 function handleModeClick(event) {
   if (filling === true) {
     filling = false;
-    mode.innerText = "채우..";
+    mode.innerText = "채우기";
   } else {
     filling = true;
-    mode.innerText = "그리..";
+    mode.innerText = "그리기";
   }
 }
 
@@ -76,7 +76,7 @@ function handleSaveClick() {
  const image = canvas.toDataURL("image/jpeg")
  const link = document.createElement("a")
  link.href = image;
- link.download = "⚽️";
+ link.download = "❤️";
  link.click();
 }
 
